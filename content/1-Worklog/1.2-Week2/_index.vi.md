@@ -1,59 +1,31 @@
 ---
-title: "Worklog Tuần 2"
+title: "Nhật ký công việc Tuần 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai giải pháp cân bằng tải và tự động mở rộng tài nguyên (ELB & Auto Scaling).
+* Sử dụng dịch vụ Amazon CloudWatch để giám sát hệ thống và Route 53 Resolver cho Hybrid DNS.
+* Tự động hóa thao tác vận hành với AWS CLI và thiết lập bảo vệ dữ liệu với AWS Backup.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Triển khai Auto Scaling kết hợp Application Load Balancer (ALB) trong môi trường Multi-AZ.<br>- Tạo Launch Template cho EC2 và cấu hình Target Groups.<br>- Cấu hình chính sách mở rộng tự động (Scaling Policies) và kiểm tra khả năng chịu lỗi (Failover). | 27/04/2026 | 27/04/2026 | <https://000006.awsstudygroup.com/> |
+| 3 | - Nghiên cứu dịch vụ Amazon CloudWatch: Metrics, Logs và Alarms.<br>- Thiết lập bảng điều khiển (Dashboards) trực quan hóa thông tin giám sát và cấu hình cảnh báo SNS khi quá tải hệ thống. | 28/04/2026 | 28/04/2026 | <https://000008.awsstudygroup.com/> |
+| 4 | - Thiết lập Hybrid DNS tích hợp hệ thống phân giải DNS on-premises và AWS Route 53.<br>- Tạo Route 53 Inbound/Outbound Endpoints và định cấu hình Resolver Rules để phân giải DNS hai chiều. | 29/04/2026 | 29/04/2026 | <https://000010.awsstudygroup.com/> |
+| 5 | - Cài đặt và cấu hình AWS CLI v2 trên máy trạm.<br>- Thực hành quản trị tài nguyên (S3, IAM, VPC, EC2, SNS) qua dòng lệnh và viết scripts tự động hóa các tác vụ quản trị cơ bản. | 30/04/2026 | 30/04/2026 | <https://000011.awsstudygroup.com/> |
+| 6 | - Triển khai AWS Backup bảo vệ dữ liệu trên S3, EC2 và RDS.<br>- Thiết lập Backup Plans, quy định thời gian lưu trữ (Retention Policies) và kiểm tra kịch bản khôi phục (Restore). | 01/05/2026 | 01/05/2026 | <https://000013.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Tự động mở rộng & Cân bằng tải (ELB/ASG)**: Xây dựng thành công hệ thống tự động co giãn tài nguyên theo tải thực tế dựa trên Launch Template, tối ưu hóa lưu lượng truy cập qua Application Load Balancer.
+* **Giám sát hệ thống (CloudWatch)**: Dựng dashboard giám sát hiệu năng tập trung cho EC2/RDS, kích hoạt cảnh báo tự động gửi email qua SNS khi tài nguyên đạt ngưỡng giới hạn.
+* **Hybrid DNS (Route 53 Resolver)**: Kết nối thành công hệ thống phân giải tên miền giữa môi trường mô phỏng On-Premises (Microsoft Active Directory AD) và AWS Private Hosted Zones.
+* **Quản trị qua dòng lệnh (AWS CLI)**: Thành thạo các lệnh quản lý tài nguyên cốt lõi, sử dụng bộ lọc truy vấn nâng cao (JMESPath) để kết xuất dữ liệu và tối ưu vận hành bằng kịch bản tự động.
+* **Bảo vệ dữ liệu (AWS Backup)**: Cấu hình tập trung lịch trình sao lưu dữ liệu cho EC2/RDS, kiểm tra quy trình khôi phục dữ liệu hoạt động chính xác đảm bảo an toàn hệ thống.

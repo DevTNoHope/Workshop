@@ -6,35 +6,28 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+Trong suốt thời gian thực tập tại cộng đồng học tập công nghệ **First Cloud AI Journey (FCAJ)** từ **20/04/2026** đến **10/07/2026**, em đã có cơ hội học hỏi chuyên sâu về điện toán đám mây AWS và phát triển dự án thực tế **ITCoach** (nền tảng luyện phỏng vấn tích hợp AI). 
 
-Trong suốt thời gian thực tập tại **[Tên công ty/tổ chức]** từ **[ngày bắt đầu]** đến **[ngày kết thúc]**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia **[mô tả ngắn gọn dự án hoặc công việc chính]**, qua đó cải thiện kỹ năng **[liệt kê kỹ năng: lập trình, phân tích, viết báo cáo, giao tiếp…]**.  
+Đặc thù của kỳ thực tập này là làm việc theo mô hình Hybrid (kết hợp từ xa và trực tiếp). Do số lượng sinh viên tham gia cộng đồng rất đông, ban quản trị áp dụng chính sách xét duyệt đăng ký trước khi lên văn phòng (yêu cầu tối thiểu 1 lần/tuần nhưng tùy thuộc vào giới hạn chỗ ngồi mà có tuần được duyệt, có tuần không). Tính đến thời điểm hiện tại, em đã tham gia làm việc trực tiếp tại văn phòng 3 buổi và tham dự 2 buổi sự kiện công nghệ trực tiếp tại văn phòng AWS (tầng 26 Bitexco Financial Tower). Thời gian còn lại em chủ động nghiên cứu và tự học từ xa.
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
-
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
-
+Dưới đây là bảng tự đánh giá cá nhân của em sau kỳ thực tập:
 
 | STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
-| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc | ✅   | ☐   | ☐          |
-| 2   | **Khả năng học hỏi**                | Tiếp thu kiến thức mới, học hỏi nhanh                                                            | ☐   | ✅   | ☐          |
-| 3   | **Chủ động**                        | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn                                                  | ✅   | ☐   | ☐          |
-| 4   | **Tinh thần trách nhiệm**           | Hoàn thành công việc đúng hạn, đảm bảo chất lượng                                                | ✅   | ☐   | ☐          |
-| 5   | **Kỷ luật**                         | Tuân thủ giờ giấc, nội quy, quy trình làm việc                                                   | ☐   | ☐   | ✅          |
-| 6   | **Tính cầu tiến**                   | Sẵn sàng nhận feedback và cải thiện bản thân                                                     | ☐   | ✅   | ☐          |
-| 7   | **Giao tiếp**                       | Trình bày ý tưởng, báo cáo công việc rõ ràng                                                     | ☐   | ✅   | ☐          |
-| 8   | **Hợp tác nhóm**                    | Làm việc hiệu quả với đồng nghiệp, tham gia nhóm                                                 | ✅   | ☐   | ☐          |
-| 9   | **Ứng xử chuyên nghiệp**            | Tôn trọng đồng nghiệp, đối tác, môi trường làm việc                                              | ✅   | ☐   | ☐          |
-| 10  | **Tư duy giải quyết vấn đề**        | Nhận diện vấn đề, đề xuất giải pháp, sáng tạo                                                    | ☐   | ✅   | ☐          |
-| 11  | **Đóng góp vào dự án/tổ chức**      | Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team                                         | ✅   | ☐   | ☐          |
-| 12  | **Tổng thể**                        | Đánh giá chung về toàn bộ quá trình thực tập                                                     | ✅   | ☐   | ☐          |
+| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về dịch vụ AWS, thiết kế hệ thống Serverless, tích hợp AI API, chất lượng code dự án. | ✅   | ☐   | ☐          |
+| 2   | **Khả năng học hỏi**                | Tiếp thu kiến thức mới về dịch vụ AWS và tích hợp API OpenAI, Amazon Polly nhanh chóng.           | ✅   | ☐   | ☐          |
+| 3   | **Chủ động**                        | Tự nghiên cứu tài liệu AWS, chủ động xây dựng kế hoạch thực hiện dự án ITCoach mà không cần thúc ép. | ✅   | ☐   | ☐          |
+| 4   | **Tinh thần trách nhiệm**           | Hoàn thành đầy đủ báo cáo tiến độ 12 tuần và các cột mốc phát triển sản phẩm.                    | ✅   | ☐   | ☐          |
+| 5   | **Kỷ luật & Tự giác**               | Tuân thủ nội quy, duy trì tiến độ làm việc remote đều đặn dù thời gian lên văn phòng hạn chế.     | ✅   | ☐   | ☐          |
+| 6   | **Tính cầu tiến**                   | Sẵn sàng lắng nghe nhận xét từ Mentor để cải tiến cấu trúc hạ tầng ứng dụng tốt hơn.              | ✅   | ☐   | ☐          |
+| 7   | **Giao tiếp**                       | Trình bày tiến độ qua tài liệu và báo cáo hàng tuần rõ ràng.                                      | ☐   | ✅   | ☐          |
+| 8   | **Hợp tác nhóm**                    | Chia sẻ tài nguyên, thảo luận các vấn đề kỹ thuật với các bạn thực tập sinh khác.                | ☐   | ✅   | ☐          |
+| 9   | **Ứng xử chuyên nghiệp**            | Tôn trọng văn hóa cộng đồng học tập chung và tuân thủ các quy tắc bảo mật thông tin.              | ✅   | ☐   | ☐          |
+| 10  | **Tư duy giải quyết vấn đề**        | Tìm cách tối ưu hóa chi phí Serverless và gỡ lỗi truyền tải âm thanh bất đồng bộ.                 | ☐   | ✅   | ☐          |
+| 11  | **Đóng góp vào dự án/tổ chức**      | Hoàn thành sản phẩm demo chạy thực tế trên hạ tầng đám mây.                                       | ✅   | ☐   | ☐          |
+| 12  | **Tổng thể**                        | Đánh giá chung về nỗ lực và kết quả đạt được trong toàn bộ quá trình thực tập.                    | ✅   | ☐   | ☐          |
 
-### Cần cải thiện
+### Những điểm cần cải thiện trong tương lai
 
-* Nâng cao tính kỹ luật, chấp hành nghiêm chỉnh nội quy của công ty hoặc bất kỳ trong một tổ chức nào
-* Cải thiện trong cách tư duy giải quyết vấn đề
-* Học cách giao tiếp tốt hơn trong giao tiếp hằng ngày và trong công việc, xử lý tình huống
+* **Kỹ năng giao tiếp trực tiếp**: Do phần lớn thời gian thực tập diễn ra dưới hình thức từ xa (chỉ có 3 buổi trực tiếp tại văn phòng và 2 buổi sự kiện), khả năng tương tác mặt đối mặt với Mentor và các thành viên khác còn hạn chế. Em cần chủ động tham gia giao lưu trực tiếp nhiều hơn để cải thiện kỹ năng này.
+* **Tư duy thiết kế hệ thống lớn**: Mặc dù đã tự tay xây dựng được hạ tầng Serverless cho ITCoach, em vẫn cần học hỏi thêm các mô hình kiến trúc chịu tải lớn và cơ chế tối ưu bảo mật chuyên sâu.

@@ -1,59 +1,31 @@
 ---
-title: "Worklog Tuần 3"
+title: "Nhật ký công việc Tuần 3"
 date: 2024-01-01
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nghiên cứu công nghệ ảo hóa và thực hành di chuyển máy ảo (VM Import/Export).
+* Tìm hiểu công nghệ Container (Docker/Docker Compose) và quản lý container trên Amazon ECS.
+* Thiết lập hệ thống tự động hóa CI/CD cho container và quản lý tuân thủ bảo mật với AWS Security Hub.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu VM Import/Export: Export máy ảo từ VMware Workstation (OVA/VMDK).<br>- Tải máy ảo lên Amazon S3, thiết lập IAM Role và thực hiện import thành AMI trên EC2.<br>- Khởi chạy instance từ Custom AMI và xác minh ứng dụng hoạt động chính xác. | 04/05/2026 | 04/05/2026 | <https://000014.awsstudygroup.com/> |
+| 3 | - Tìm hiểu Docker cơ bản: Dockerfile, Images, Containers và các lệnh cơ bản.<br>- Khởi động EC2 cài đặt Docker, xây dựng ứng dụng multi-container bằng Docker Compose.<br>- Tạo kho lưu trữ Amazon ECR, cấu hình IAM truy cập và đẩy ảnh (Docker Image) lên ECR. | 05/05/2026 | 05/05/2026 | <https://000015.awsstudygroup.com/> |
+| 4 | - Nghiên cứu dịch vụ quản lý container Amazon ECS: Clusters, Task Definitions và Services.<br>- Tạo ECS Cluster (EC2 launch type), thiết lập Application Load Balancer và đăng ký dịch vụ với AWS Cloud Map.<br>- Thực hành cập nhật Rolling Update và Blue/Green Deployment. | 06/05/2026 | 06/05/2026 | <https://000016.awsstudygroup.com/> |
+| 5 | - Thiết kế CI/CD pipeline tự động hóa quy trình deploy container lên Amazon ECS.<br>- Cấu hình mã nguồn trên GitLab, viết tệp cấu hình `.gitlab-ci.yml` và tích hợp AWS CodeBuild.<br>- Tự động hóa build, push Docker image lên ECR và deploy ứng dụng lên ECS. | 07/05/2026 | 07/05/2026 | <https://000017.awsstudygroup.com/> |
+| 6 | - Tìm hiểu AWS Security Hub và các tiêu chuẩn bảo mật đám mây (CIS AWS Foundations, PCI DSS).<br>- Kích hoạt Security Hub, phân tích các lỗ hổng (security findings), tạo custom insights và thiết lập cơ chế tự khắc phục lỗi bằng AWS Config. | 08/05/2026 | 08/05/2026 | <https://000018.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Di chuyển máy ảo (VM Import/Export)**: Thực hiện thành công quy trình di chuyển máy ảo chạy hệ điều hành Ubuntu từ on-premises sang đám mây dưới dạng Custom AMI trên EC2, và ngược lại.
+* **Đóng gói ứng dụng (Docker/ECR)**: Thành thạo các bước viết Dockerfile tối ưu, quản lý ứng dụng đa container bằng Docker Compose và đẩy ảnh lên Amazon Elastic Container Registry an toàn.
+* **Quản lý Container (Amazon ECS)**: Triển khai thành công ứng dụng trên ECS Cluster, cấu hình mạng (awsvpc), tích hợp ALB định tuyến lưu lượng và thực hiện Blue/Green deployments thông qua CodeDeploy.
+* **Tự động hóa CI/CD**: Xây dựng thành công pipeline CI/CD từ GitLab CI kết nối trực tiếp đến AWS ECR và ECS, giúp tự động hóa quy trình build và cập nhật ứng dụng ngay khi thay đổi code.
+* **Kiểm toán bảo mật (Security Hub)**: Kích hoạt giám sát bảo mật tập trung cho toàn bộ tài khoản AWS, phát hiện sớm các lỗ hổng bảo mật cấu hình sai và nắm rõ cách cải thiện điểm số tuân thủ bảo mật hệ thống.

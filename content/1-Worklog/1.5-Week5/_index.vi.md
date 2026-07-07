@@ -1,59 +1,31 @@
 ---
-title: "Worklog Tuần 5"
+title: "Nhật ký công việc Tuần 5"
 date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai hệ thống lưu trữ tập trung dùng chung cho Windows (Amazon FSx) và tường lửa bảo vệ ứng dụng (AWS WAF).
+* Nghiên cứu chiến lược quản lý tài nguyên (Tagging, Resource Groups) và kiểm soát quyền truy cập dựa trên thuộc tính (ABAC).
+* Thiết lập hệ thống giám sát đồ họa trực quan (Grafana) và bảo mật nâng cao với IAM Permission Boundary.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Triển khai Amazon FSx for Windows File Server SSD/HDD Multi-AZ.<br>- Ánh xạ thư mục chia sẻ mặc định lên client, kiểm tra hiệu năng, cấu hình Data Deduplication (chống trùng lặp) và Shadow Copies. | 18/05/2026 | 18/05/2026 | <https://000025.awsstudygroup.com/> |
+| 3 | - Nghiên cứu tường lửa AWS WAF chống lại các mối đe dọa bảo mật phổ biến (OWASP Top 10).<br>- Triển khai ứng dụng web mẫu (OWASP Juice Shop), tạo Web ACL từ WAF console và thiết lập các rule ngăn chặn SQL Injection, XSS. | 19/05/2026 | 19/05/2026 | <https://000026.awsstudygroup.com/> |
+| 4 | - Xây dựng chiến lược quản lý tài nguyên bằng Resource Tagging.<br>- Cấu hình Resource Groups phân loại tài nguyên và áp dụng IAM Policy kiểm soát truy cập dựa trên Tags (ABAC - Attribute-Based Access Control). | 20/05/2026 | 20/05/2026 | <https://000027.awsstudygroup.com/><br><https://000028.awsstudygroup.com/> |
+| 5 | - Cài đặt Grafana Server trên máy chủ Linux EC2.<br>- Cấu hình IAM Role thu thập dữ liệu CloudWatch, thiết lập data source và xây dựng Dashboard hiển thị trực quan các số liệu tài nguyên. | 21/05/2026 | 21/05/2026 | <https://000029.awsstudygroup.com/> |
+| 6 | - Nghiên cứu IAM Permission Boundary ngăn chặn leo thang đặc quyền (privilege escalation).<br>- Tạo Restriction Policy giới hạn quyền hạn cao nhất của người dùng và kiểm thử chặn các thao tác ngoài phạm vi cho phép. | 22/05/2026 | 22/05/2026 | <https://000030.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Hệ thống lưu trữ Windows (FSx)**: Triển khai thành công hệ thống tệp tin FSx có tính khả dụng cao, tiết kiệm dung lượng qua Data Deduplication và kích hoạt Shadow Copies cho phép người dùng tự khôi phục file cũ.
+* **Bảo vệ ứng dụng Web (WAF)**: Ngăn chặn thành công các đòn tấn công mô phỏng (SQLi, XSS, DDoS) bằng WAF Web ACL tích hợp các rule tùy chỉnh, tối ưu hóa bảo mật hệ thống.
+* **Kiểm soát quyền bằng Tag (ABAC)**: Thiết lập phân quyền động linh hoạt, kiểm soát quyền vận hành tài nguyên (Start/Stop EC2) dựa trên tag đính kèm mà không cần chỉnh sửa IAM Policy.
+* **Giám sát trực quan (Grafana)**: Kết nối thành công nguồn dữ liệu CloudWatch trích xuất số liệu hiệu năng tài nguyên thời gian thực hiển thị trên Dashboard Grafana trực quan.
+* **Giới hạn quyền hạn (Permission Boundary)**: Thiết lập rào chắn bảo mật tối đa cho tài khoản người dùng, loại bỏ hoàn toàn nguy cơ tự nâng cấp quyền quản trị ngoài tầm kiểm soát của quản trị viên.

@@ -1,59 +1,29 @@
 ---
-title: "Worklog Tuần 10"
+title: "Nhật ký công việc Tuần 10"
 date: 2024-01-01
-weight: 2
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thiết lập API Gateway tập trung, cấu hình xác thực Cognito Authorizer và triển khai 8 API Endpoints nghiệp vụ.
+* Khởi tạo mã nguồn ứng dụng Client Frontend (ReactJS & TypeScript) và tích hợp các thư viện xác thực Cognito SDK.
+* Phát triển giao diện Dashboard cá nhân theo dõi tiến độ học tập, giao diện trắc nghiệm ôn tập kiến thức (Quiz) và tự luận (Essay).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Khởi tạo API RESTful trên API Gateway (`itcoach-api`).<br>- Thiết lập Cognito Authorizer (`itcoach-cognito-auth`) liên kết với Cognito User Pool đã tạo và cấu hình Token source bằng header `Authorization`. | 22/06/2026 | 22/06/2026 | Hướng dẫn ITCoach |
+| 3 | - Tạo cấu trúc 8 endpoints trên API Gateway, cấu hình các method (GET/POST) tích hợp với Lambda tương ứng.<br>- Kích hoạt CORS (Enable CORS) cho tất cả các resources và deploy API lên stage `prod`. | 23/06/2026 | 23/06/2026 | Hướng dẫn ITCoach |
+| 4 | - Khởi tạo dự án Frontend bằng ReactJS và TypeScript.<br>- Tích hợp thư viện AWS Cognito SDK cấu hình đăng nhập, đăng ký và lấy ID token gửi kèm trong các request API. | 24/06/2026 | 24/06/2026 | Hướng dẫn ITCoach |
+| 5 | - Phát triển giao diện Dashboard cá nhân hiển thị tiến độ học tập, tỷ lệ hoàn thành chủ đề, streak học tập liên tiếp và bảng xếp hạng thành tích người dùng (Bảng điểm XP). | 25/06/2026 | 25/06/2026 | Hướng dẫn ITCoach |
+| 6 | - Phát triển giao diện trắc nghiệm ôn tập (Quiz) hỗ trợ chọn một/nhiều đáp án đúng.<br>- Phát triển giao diện làm bài tự luận (Essay) gồm khung soạn thảo câu trả lời văn bản và nút ghi âm câu trả lời trực tiếp. | 26/06/2026 | 26/06/2026 | Hướng dẫn ITCoach |
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Tích hợp API Gateway**: Cấu hình hoàn chỉnh cổng kết nối API tập trung được bảo mật an toàn bằng Cognito Authorizer, đảm bảo chỉ người dùng đã xác thực mới có quyền truy cập dữ liệu.
+* **Cơ sở hạ tầng Frontend**: Thiết lập xong mã nguồn ReactJS + TypeScript sạch, kết nối xác thực người dùng hoạt động trơn tru từ Client đến AWS Cognito.
+* **Module ôn luyện kiến thức**: Phát triển thành công các chức năng học tập cơ bản: giao diện Dashboard trực quan, làm bài trắc nghiệm tính điểm XP, và khung luyện tập tự luận cơ bản.

@@ -6,42 +6,35 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
+Below is my objective sharing and feedback after participating in the internship and community study program at **First Cloud AI Journey (FCAJ)**:
 
 ### Overall Evaluation
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+**1. Working and Learning Environment**  
+* The AWS office on the 26th floor of Bitexco Financial Tower offers a highly professional workspace with modern facilities and an inspiring view.
+* However, due to a very large number of students participating in the community internship, the management implemented a desk-booking approval process. The organization requested that each student come to the office at least once a week, but due to capacity limitations, approvals were irregular (some weeks approved, other weeks not). Up to the current moment, I have only had the opportunity to work at the office for 3 sessions and attend 2 technology events. Most of my work was carried out remotely via self-study.
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+**2. Support from Mentors and Admins**  
+* Mentors possess deep expertise in AWS services and are always helpful in answering technical questions via online communication channels (WhatsApp).
+* Even with limited in-person face time, the mentors gave me complete ownership over the research and system design of the ITCoach application, stepping in only to guide or optimize when necessary.
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+**3. Relevance of Projects to Academic Major**  
+* Developing the ITCoach platform is a perfect match for my software engineering and cloud computing major. It helped me apply theoretical knowledge of networking, databases, and security to a live Serverless stack integrated with modern Generative AI tools.
 
 **4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+* The program offers immense learning value through structured hands-on assignments covering the entire AWS ecosystem.
+* It trained me to become highly self-motivated and disciplined in managing tasks independently while working remotely.
 
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+**5. Community Culture and Team Spirit**  
+* FCAJ is an active community connecting individuals passionate about cloud technology and AI. Members are open, share useful learning assets, and actively help each other debug system configuration issues.
 
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
-
----
-
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+**6. Internship Policies & Benefits**  
+* Because **First Cloud AI Journey (FCAJ)** is defined as a non-profit **shared learning community** aimed at introducing IT students to modern cloud tech, this internship program **does not offer any stipend or salary** for interns.
+* Instead, students receive free hands-on AWS sandbox credits and direct guidance from senior engineers, which provides immense practical learning value.
 
 ---
 
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+### Suggestions & Expectations for Improvement
+
+* **Optimize Office Booking Rotations**: I hope the management team can optimize the rotation system or secure more desk space to increase the office approval rate for students. Working at the office and exchanging ideas face-to-face with mentors and peers would improve communication efficiency compared to working fully remote.
+* **Organize Weekly Virtual Meetups**: In light of limited office visits, organizing short weekly online syncs would give interns more opportunities to share their progress and discuss technical roadblocks together.

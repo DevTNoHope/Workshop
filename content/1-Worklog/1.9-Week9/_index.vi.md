@@ -1,59 +1,29 @@
 ---
-title: "Worklog Tuần 9"
+title: "Nhật ký công việc Tuần 9"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai hệ thống cơ sở dữ liệu DynamoDB gồm 8 bảng, cấu hình hiệu suất On-demand và thiết lập Global Secondary Indexes (GSI).
+* Phát triển và triển khai nhóm Lambda Functions xử lý các API nghiệp vụ đăng nhập, quản lý câu hỏi, quản trị phiên phỏng vấn và nộp bài.
+* Phát triển Lambda xử lý tác vụ thông minh (AI processing), cấu hình biến môi trường hệ thống và thiết lập SQS trigger.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Triển khai 8 bảng DynamoDB: `users`, `questions`, `sessions`, `answers`, `history`, `topics`, `quiz-attempts`, `gamification` ở chế độ On-demand.<br>- Cấu hình các chỉ mục phụ toàn cục (GSI): `category-index`, `userId-index`, `sessionId-index`, `xp-index` để tối ưu hóa hiệu suất truy vấn. | 15/06/2026 | 15/06/2026 | Hướng dẫn ITCoach |
+| 3 | - Phát triển Lambda `itcoach-auth-handler` quản lý thông tin profile người dùng.<br>- Phát triển Lambda `itcoach-question-handler` truy xuất danh sách câu hỏi tự luận theo chuyên ngành (Frontend, Backend, DevOps...) và danh sách topics. | 16/06/2026 | 16/06/2026 | Hướng dẫn ITCoach |
+| 4 | - Phát triển Lambda `itcoach-session-handler` khởi tạo phiên Mock Interview, tự động chọn câu hỏi từ ngân hàng dựa trên level/duration.<br>- Phát triển Lambda `itcoach-answer-handler` lưu thông tin câu trả lời và tạo Presigned URL upload file âm thanh lên S3. | 17/06/2026 | 17/06/2026 | Hướng dẫn ITCoach |
+| 5 | - Phát triển Lambda xử lý tác vụ nặng `itcoach-ai-processor` tích hợp OpenAI STT dịch âm thanh, OpenAI GPT chấm điểm/nhận xét câu trả lời, và Polly TTS chuyển văn bản phản hồi thành giọng nói.<br>- Cấu hình biến môi trường: bucket S3, tên bảng DB, endpoint URL và API key. | 18/06/2026 | 18/06/2026 | Hướng dẫn ITCoach |
+| 6 | - Phát triển các Lambda Functions phụ trợ còn lại: `itcoach-result-handler` (lịch sử, thống kê), `itcoach-quiz-handler` (làm quiz, thuật toán Spaced Repetition SM-2), và `itcoach-gamification-handler` (XP, streaks, leaderboard).<br>- Thiết lập SQS trigger liên kết SQS Queue với Lambda `itcoach-ai-processor`. | 19/06/2026 | 19/06/2026 | Hướng dẫn ITCoach |
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Hạ tầng Cơ sở dữ liệu (DynamoDB)**: Khởi tạo thành công 8 bảng DynamoDB hoạt động ổn định ở chế độ On-demand, cấu hình các chỉ mục GSI cho phép truy vấn nhanh dữ liệu phiên và bảng xếp hạng XP.
+* **Logic Nghiệp vụ (Lambda)**: Triển khai thành công 8 Lambda functions bằng Python 3.12, gán đúng Custom Role và tối ưu hóa thời gian timeout, dung lượng RAM cho từng dịch vụ.
+* **Tích hợp Tự động hóa**: Cấu hình thành công biến môi trường bảo mật độc lập, thiết lập trigger SQS kích hoạt Lambda AI xử lý bất đồng bộ các tệp tin âm thanh ghi âm hiệu quả.

@@ -1,125 +1,80 @@
 ---
-title: "Event 1"
+title: "Event 1 - FCAJ Community Day"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Báo cáo thu hoạch: FCAJ Community Day (23/05/2026)
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### 1. Thông tin chung về sự kiện
+* **Tên sự kiện**: FCAJ Community Day (AWS First Cloud AI Journey)
+* **Thời gian**: 09:00 - 12:00, Thứ Bảy ngày 23/05/2026
+* **Địa điểm**: Văn phòng AWS, Tầng 26, Bitexco Financial Tower, Quận 1, TP. Hồ Chí Minh
+* **Vai trò**: Thành viên cộng đồng tham dự học tập
 
-### Mục Đích Của Sự Kiện
+---
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### 2. Các nội dung công nghệ nổi bật được chia sẻ
 
-### Danh Sách Diễn Giả
+#### Chuyên đề 1: Tầm quan trọng của ngữ cảnh trong các mô hình Generative AI
+* **Diễn giả**: Tinh Truong
+* Diễn giả phân tích nguyên nhân tại sao AI thường đưa ra kết quả không chính xác hoặc xa rời thực tế khi thiếu dữ liệu nền tảng. 
+* Đề xuất giải pháp xây dựng "Bộ não AI thứ hai" (Second Brain AI) giúp mô hình ghi nhớ thông tin ngữ cảnh lịch sử và đưa ra phản hồi chính xác, cá nhân hóa hơn.
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+#### Chuyên đề 2: Tối ưu hóa hiệu suất làm việc với Amazon Q
+* **Diễn giả**: Anh Pham
+* Giới thiệu sức mạnh của trợ lý AI Amazon Q thông qua 4 thành phần chính:
+  * **Quick Chat Agent**: Khám phá và phân tích nhanh dữ liệu.
+  * **Quick Flows**: Thiết lập quy trình làm việc tự động hóa chỉ bằng ngôn ngữ tự nhiên (No-code).
+  * **Quick Spaces**: Không gian chia sẻ thông tin cộng tác nhóm.
+  * **Quick Vision**: Tự động dựng biểu đồ báo cáo từ nguồn dữ liệu thô.
 
-### Nội Dung Nổi Bật
+#### Chuyên đề 3: Bảo mật và phân phối nội dung tối ưu với Amazon CloudFront
+* **Diễn giả**: Thinh Nguyen
+* Chuyên đề chỉ ra rằng CloudFront không đơn thuần là dịch vụ CDN lưu bộ nhớ đệm (cache), mà là một bộ phận cốt lõi của hạ tầng mạng giúp:
+  * Bảo mật biên tích hợp chống DDoS/WAF.
+  * Cắt giảm chi phí Data Transfer Out của hệ thống AWS.
+  * Tăng độ tin cậy và hiệu năng truy cập ứng dụng toàn cầu.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Chuyên đề 4: Kinh nghiệm thực chiến 36 giờ Hackathon LotusHacks
+* **Diễn giả**: Nhóm VIB
+* Chia sẻ câu chuyện phát triển sản phẩm thực tế UTMorpho từ giai đoạn lên ý tưởng đến hoàn thiện sản phẩm dưới áp lực thời gian của một cuộc thi phần mềm. 
+* Nhấn mạnh tầm quan trọng của việc ra quyết định xoay chuyển (pivot) ý tưởng nhanh chóng và xây dựng MVP tối giản.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### Chuyên đề 5: Hiện tượng không xác định trong suy luận của mô hình LLM
+* **Diễn giả**: Duc Dao
+* Phân tích sâu về mặt kỹ thuật: Ngay cả khi thiết lập tham số nhiệt độ bằng 0 (`temperature=0`), đầu ra của các LLM vẫn có thể không đồng nhất do các tối ưu hóa phần cứng suy luận ở tầng sâu. 
+* Đưa ra các giải pháp giảm thiểu sự không xác định này trong ứng dụng thực tế.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Chuyên đề 6: Kiến trúc đa tác nhân (Multi-Agent System) cho doanh nghiệp
+* **Diễn giả**: Vy Lam
+* Nghiên cứu bài toán thực tế về đánh giá điểm tín dụng cho các startup. 
+* Thay vì sử dụng một mô hình AI đơn lẻ, diễn giả giới thiệu mô hình "Ủy ban tín dụng ảo" gồm nhiều Agent chuyên biệt phối hợp cùng nhau để đưa ra quyết định tín dụng chuẩn xác.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+---
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+### 3. Những bài học và giá trị thu hoạch cá nhân
 
-#### Domain-Driven Design (DDD)
+* **Về mặt công nghệ**:
+  * Em hiểu rõ hơn về cách thức hoạt động bên trong của LLMs, đặc biệt là cơ chế suy luận và tính không xác định. Điều này rất có ích để cấu hình chính xác tham số cho mô hình AI trong dự án thực tế.
+  * Nhận thức đúng về vai trò của AWS CloudFront. Nó không chỉ phân phối nội dung tĩnh mà còn là giải pháp tối ưu bảo mật và chi phí vận hành mạng cực kỳ hiệu quả cho doanh nghiệp.
+  * Nhận diện được xu hướng dịch chuyển từ Single-Agent sang Multi-Agent Systems cho các bài toán nghiệp vụ phức tạp của doanh nghiệp.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+* **Trải nghiệm thực tế và ứng dụng**:
+  * Buổi giao lưu giúp em được hòa mình vào bầu không khí học tập sôi nổi của cộng đồng AWS tại Việt Nam, tiếp xúc trực tiếp với các chuyên gia có kinh nghiệm.
+  * Em có thể ứng dụng trực tiếp các kiến thức về quản lý ngữ cảnh và phân tích tính không xác định của LLM vào việc xây dựng module đánh giá câu trả lời tự luận cho dự án **ITCoach** hiện tại.
 
-#### Event-Driven Architecture
+---
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+### 4. Một số hình ảnh ghi nhận tại sự kiện
 
-#### Compute Evolution
+![Hình ảnh tham gia FCAJ Event 1](/images/event11.jpg)
+*Hình 1: Không khí buổi chia sẻ công nghệ tại văn phòng AWS Việt Nam*
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+![Hình ảnh tham gia FCAJ Event 2](/images/event12.jpg)
+*Hình 2: Các chuyên gia thảo luận chuyên sâu về Generative AI*
 
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+![Hình ảnh tham gia FCAJ Event 3](/images/event13.jpg)
+*Hình 3: Buổi Q&A trực tiếp cùng các diễn giả công nghệ*

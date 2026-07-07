@@ -6,34 +6,28 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+During my internship at the technology learning community **First Cloud AI Journey (FCAJ)** from **April 20, 2026** to **July 10, 2026**, I had the opportunity to study AWS Cloud Services in depth and develop my graduation project, **ITCoach** (an AI-powered mock interview simulator). 
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+The unique aspect of this internship was its hybrid model. Due to a very high volume of students in the community, the management team set up an approval system for booking office desks. Although we were requested to come to the office at least once a week, desk approvals were on-and-off depending on capacity. Up to the current moment, I have been approved to work at the office for 3 sessions, along with participating in 2 technology community events at the AWS Office (26th floor of Bitexco Financial Tower). The remaining time was spent on proactive remote research and self-study.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
-
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+Below is my self-evaluation sheet for the internship period:
 
 | No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+| 1   | **Professional knowledge & skills** | Understanding AWS services, Serverless design patterns, AI API integration, and code quality.    | ✅    | ☐    | ☐       |
+| 2   | **Ability to learn**                | Speed of picking up AWS architecture and integrating OpenAI and Amazon Polly APIs.               | ✅    | ☐    | ☐       |
+| 3   | **Proactiveness**                   | Proactively researching AWS documentation and planning the ITCoach roadmap without supervision. | ✅    | ☐    | ☐       |
+| 4   | **Sense of responsibility**         | Completing all 12 weekly progress reports and achieving deployment milestones on schedule.        | ✅    | ☐    | ☐       |
+| 5   | **Discipline & Self-motivation**    | Staying disciplined and maintaining stable remote progress despite limited office visits.        | ✅    | ☐    | ☐       |
+| 6   | **Progressive mindset**             | Actively seeking and applying feedback from mentors to improve infrastructure setups.            | ✅    | ☐    | ☐       |
+| 7   | **Communication**                   | Presenting progress through reports and documentation clearly on a weekly basis.                 | ☐    | ✅    | ☐       |
+| 8   | **Teamwork**                        | Exchanging ideas and discussing technical issues with other interns in the group.                | ☐    | ✅    | ☐       |
+| 9   | **Professional conduct**            | Respecting the community culture and adhering to security rules.                                 | ✅    | ☐    | ☐       |
+| 10  | **Problem-solving skills**          | Finding ways to optimize Serverless costs and debugging asynchronous audio queues.               | ☐    | ✅    | ☐       |
+| 11  | **Contribution to project/team**    | Delivering a working application deployed on live cloud infrastructure.                          | ✅    | ☐    | ☐       |
+| 12  | **Overall**                         | General evaluation of efforts and outcomes during the entire internship period.                  | ✅    | ☐    | ☐       |
 
-### Needs Improvement
+### Areas for Future Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* **Face-to-Face Communication**: Because a major part of the internship was conducted remotely (only 3 in-office work sessions and 2 event sessions), opportunities for face-to-face interaction with mentors and other interns were limited. I need to participate in more local community events to improve my in-person communication.
+* **Large-scale System Design**: Although I successfully set up the Serverless architecture for ITCoach, I still need to learn more about high-throughput system scaling and advanced security guardrails.

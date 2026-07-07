@@ -1,59 +1,31 @@
 ---
-title: "Worklog Tuần 7"
+title: "Nhật ký công việc Tuần 7"
 date: 2024-01-01
-weight: 1
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Quản lý giám sát hệ thống nâng cao với Amazon CloudWatch (Metric Expressions, Logs Insights).
+* Triển khai hạ tầng dạng mã (IaC) sử dụng AWS CloudFormation và AWS Cloud Development Kit (CDK).
+* Làm chủ hệ thống cơ sở dữ liệu NoSQL DynamoDB và xây dựng nền tảng phân tích báo cáo chi phí (Glue & Athena).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Triển khai giám sát CloudWatch nâng cao: sử dụng Search/Math expressions và Dynamic Labels.<br>- Cấu hình CloudWatch Logs, sử dụng Logs Insights viết câu lệnh SQL phân tích log và thiết lập Metric Filters kích hoạt Alarms tự động. | 01/06/2026 | 01/06/2026 | <https://000036.awsstudygroup.com/> |
+| 3 | - Nghiên cứu nguyên lý Infrastructure as Code (IaC) với AWS CloudFormation.<br>- Viết template deploy EC2 nâng cao sử dụng Custom Resources (gọi Lambda), Mappings, StackSets đa vùng/đa tài khoản và chạy Drift Detection. | 02/06/2026 | 02/06/2026 | <https://000037.awsstudygroup.com/> |
+| 4 | - Tìm hiểu AWS Cloud Development Kit (CDK) định nghĩa hạ tầng bằng mã ngôn ngữ lập trình.<br>- Triển khai CDK Stacks (VPC, S3, EC2), chạy cdk bootstrap/deploy trên Cloud9 và tích hợp User Data cài đặt ứng dụng tự động. | 03/06/2026 | 03/06/2026 | <https://000038.awsstudygroup.com/> |
+| 5 | - Nghiên cứu cơ sở dữ liệu NoSQL Amazon DynamoDB: CLI, Console, nạp dữ liệu mẫu.<br>- Thực hành truy xuất dữ liệu nâng cao (Query vs Scan), cấu hình chỉ mục phụ GSI, thực hiện giao dịch Transactions và cấu hình PITR sao lưu tự động. | 04/06/2026 | 04/06/2026 | <https://000039.awsstudygroup.com/> |
+| 6 | - Xây dựng nền tảng phân tích báo cáo chi phí CUR bằng AWS Glue và Amazon Athena.<br>- Tạo bảng trong Glue Data Catalog từ file Parquet trên S3 và viết các câu lệnh SQL tối ưu hóa chi phí (Top accounts/services, Tag-based, RI vs On-Demand). | 05/06/2026 | 05/06/2026 | <https://000040.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Giám sát nâng cao (CloudWatch)**: Sử dụng thành thạo CloudWatch Logs Insights phân tích nhanh log hệ thống, thiết lập Metric Filters tự động đếm lỗi hệ thống và dựng Dashboards theo dõi tập trung.
+* **Hạ tầng dạng mã (CloudFormation)**: Tạo thành công template triển khai hạ tầng tự động, tích hợp Custom Resource cấu hình sâu cho EC2 và sử dụng Drift Detection rà soát cấu hình sai lệch thực tế.
+* **Định nghĩa hạ tầng bằng Code (CDK)**: Tận dụng sức mạnh ngôn ngữ lập trình (TypeScript) định nghĩa và cdk deploy các stack tài nguyên đám mây nhanh chóng, tự động hóa cấu hình máy chủ qua User Data.
+* **Cơ sở dữ liệu NoSQL (DynamoDB)**: Thiết kế bảng DynamoDB tối ưu, cải tiến tốc độ truy vấn phi khóa chính qua Global Secondary Indexes (GSI), thực thi giao dịch ACID an toàn và cấu hình PITR bảo vệ dữ liệu.
+* **Phân tích chi phí nâng cao (CUR)**: Xây dựng hoàn chỉnh nền tảng phân tích chi phí CUR bằng Athena, chạy các truy vấn SQL bóc tách chi phí chi tiết theo thẻ CostCenter, theo dõi hiệu quả mua Reserved Instances và Savings Plans.

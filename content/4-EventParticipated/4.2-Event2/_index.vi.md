@@ -1,125 +1,60 @@
 ---
-title: "Event 2"
+title: "Event 2 - FCAJ Community Day (27/06/2026)"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Báo cáo thu hoạch: FCAJ Community Day - Lần thứ 2 (27/06/2026)
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### 1. Thông tin chung về sự kiện
+* **Tên sự kiện**: FCAJ Community Day (June Edition)
+* **Thời gian**: 09:00 - 11:30, Thứ Bảy ngày 27/06/2026
+* **Địa điểm**: Tầng 26, Bitexco Financial Tower, Quận 1, TP. Hồ Chí Minh
+* **Vai trò**: Thành viên cộng đồng tham dự học tập
 
-### Mục Đích Của Sự Kiện
+---
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### 2. Các chuyên đề công nghệ chính được trình bày
 
-### Danh Sách Diễn Giả
+#### Chuyên đề 1: Giải pháp tự động hóa khắc phục sự cố (Deep Reactive Systems)
+* Nội dung thảo luận về việc dịch chuyển từ mô hình giám sát gửi cảnh báo truyền thống (gây quá tải thông tin cho kỹ sư vận hành) sang hệ thống tự động đưa ra hành động khắc phục lỗi.
+* Trình diễn trực tiếp quá trình phát hiện sự cố hiệu năng, tự động chạy script xử lý mà không cần sự can thiệp thủ công, giúp tối ưu hóa chỉ số MTTR (Mean Time to Resolution).
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+#### Chuyên đề 2: Công nghệ Voice AI đàm thoại tự nhiên quy mô lớn
+* Giới thiệu mô hình nền tảng xử lý giọng nói tiên tiến **Amazon Nova Sonic**, hỗ trợ chuyển đổi trực tiếp từ giọng nói sang giọng nói mà không cần bước trung gian chuyển thành văn bản.
+* Phương pháp này giải quyết triệt để 3 thách thức lớn của Voice AI: giảm độ trễ xuống dưới 1 giây, nâng cao độ chính xác nhận diện ngữ điệu và duy trì ngữ cảnh cuộc trò chuyện thời gian thực.
 
-### Nội Dung Nổi Bật
+#### Chuyên đề 3: Ứng dụng AWS DevOps Agent trong quản trị hạ tầng
+* Giới thiệu trợ lý DevOps AI hoạt động 24/7 giúp rút ngắn thời gian phát hiện lỗi hệ thống (MTTD).
+* Dịch vụ sử dụng nền tảng Bedrock AgentCore hỗ trợ suy luận đa tác nhân để tự động gỡ lỗi trên các hạ tầng container như Amazon ECS và hỗ trợ môi trường lai Multi-cloud.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Chuyên đề 4: Tối ưu hóa nguồn lực nhân sự bằng AI
+* Ứng dụng công nghệ phân tích dữ liệu thông minh trong việc hoạch định và dự báo nhu cầu nhân sự cho doanh nghiệp lớn.
+* Giới thiệu khả năng tự động hóa các quy trình phê duyệt hành chính và trích xuất insights sâu từ dữ liệu nhân sự trực quan theo thời gian thực.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### Chuyên đề 5: Bảo mật kênh truyền dữ liệu MCP trong mạng nội bộ VPC
+* Hướng dẫn giải pháp thiết lập đường truyền dữ liệu an toàn cho Model Context Protocol (MCP) khi kết nối trợ lý AI với các dịch vụ dữ liệu nội bộ.
+* Nhấn mạnh việc cấu hình VPC riêng tư nhằm cô lập lưu lượng mạng, loại bỏ nguy cơ rò rỉ dữ liệu nhạy cảm ra Internet công cộng.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+---
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+### 3. Bài học rút ra và Ứng dụng vào dự án cá nhân
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+* **Đổi mới tư duy vận hành**:
+  * Em nhận thấy tầm quan trọng của việc thiết lập hệ thống tự khắc phục lỗi tự động. Kiến thức này giúp em định hình việc viết các kịch bản vá lỗi tự động trên AWS Lambda và CloudWatch Alarms cho dự án của mình.
+  * Hiểu rõ cơ chế giảm độ trễ trong truyền tải âm thanh. Mô hình Nova Sonic cho thấy tầm quan trọng của việc truyền dữ liệu dạng streaming trực tiếp để giữ độ trễ thấp khi đàm thoại.
 
-#### Domain-Driven Design (DDD)
+* **Ứng dụng bảo mật và tích hợp**:
+  * Việc tìm hiểu về MCP giúp em có ý tưởng tích hợp linh hoạt các API bên ngoài cho chatbot hoặc AI Mentor của mình một cách bảo mật hơn thông qua các quy tắc cách ly mạng VPC.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+---
 
-#### Event-Driven Architecture
+### 4. Một số hình ảnh tại sự kiện
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+![Hình ảnh tham gia FCAJ Event 2.1](/images/event21.jpg)
+*Hình 1: Không khí của buổi sự kiện hôm đó*
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+![Hình ảnh tham gia FCAJ Event 2.2](/images/event14.jpg)
+*Hình 2: Phần trình bày của nhóm VIB*

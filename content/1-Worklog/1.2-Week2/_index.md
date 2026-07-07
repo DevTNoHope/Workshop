@@ -1,57 +1,31 @@
 ---
 title: "Week 2 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Deploy Application Load Balancing and Auto Scaling solutions.
+* Monitor systems with Amazon CloudWatch and configure Hybrid DNS with Route 53 Resolver.
+* Automate AWS administration tasks using AWS CLI and protect resources with AWS Backup.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Mon | - Deploy Application Load Balancer (ALB) and Auto Scaling Group (ASG) in Multi-AZ environment.<br>- Create EC2 Launch Template and target groups.<br>- Configure scaling policies and verify health check failover. | 04/27/2026 | 04/27/2026 | <https://000006.awsstudygroup.com/> |
+| Tue | - Research Amazon CloudWatch: Metrics, Logs, and Alarms.<br>- Create custom CloudWatch Dashboards and configure SNS notification alarms for CPU utilization. | 04/28/2026 | 04/28/2026 | <https://000008.awsstudygroup.com/> |
+| Wed | - Set up Hybrid DNS between simulated on-premises Active Directory and Route 53.<br>- Configure Route 53 Inbound/Outbound Endpoints and Resolver Rules for bidirectional query routing. | 04/29/2026 | 04/29/2026 | <https://000010.awsstudygroup.com/> |
+| Thu | - Install and configure AWS CLI v2.<br>- Manage AWS resources (S3, IAM, VPC, EC2, SNS) using CLI and write automation scripts using JMESPath query filters. | 04/30/2026 | 04/30/2026 | <https://000011.awsstudygroup.com/> |
+| Fri | - Deploy AWS Backup for centralized protection of S3, EC2, and RDS.<br>- Configure backup plans, retention lifecycle policies, and verify restore operations. | 05/01/2026 | 05/01/2026 | <https://000013.awsstudygroup.com/> |
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Auto Scaling & Load Balancing (ELB/ASG)**: Successfully built a scalable compute infrastructure driven by resource utilization metrics and optimized incoming traffic with Application Load Balancers.
+* **System Monitoring (CloudWatch)**: Implemented consolidated performance tracking dashboards for compute and database layers, with real-time alerting using SNS.
+* **Hybrid DNS (Route 53 Resolver)**: Integrated simulated on-premises Active Directory DNS resolution with AWS Private Hosted Zones seamlessly.
+* **Command Line Management (AWS CLI)**: Gained proficiency in executing core resource operations and automating workflow scripts via AWS CLI querying.
+* **Data Protection (AWS Backup)**: Created centralized backups for production assets (EC2 and databases) and validated recovery processes to ensure disaster preparedness.

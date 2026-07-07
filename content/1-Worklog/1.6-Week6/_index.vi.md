@@ -1,58 +1,31 @@
 ---
-title: "Worklog Tuần 6"
+title: "Nhật ký công việc Tuần 6"
 date: 2024-01-01
-weight: 1
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Vận hành và quản lý máy chủ tập trung (SSM) và tối ưu hóa tài nguyên compute (Compute Optimizer).
+* Triển khai mã hóa dữ liệu tĩnh (KMS) và kiểm toán hoạt động của tài khoản (CloudTrail & Athena).
+* Phân tích chi phí chuyên sâu (Cost Explorer) và xây dựng kiến trúc Data Lake phục vụ phân tích dữ liệu lớn.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Quản trị máy chủ EC2 tập trung bằng AWS Systems Manager (SSM).<br>- Gán IAM Role SSM Core, sử dụng Patch Manager tự động vá lỗi hệ điều hành và Run Command thực thi script từ xa không cần mở cổng RDP/SSH. | 25/05/2026 | 25/05/2026 | <https://000031.awsstudygroup.com/> |
+| 3 | - Thiết lập CloudWatch Agent trên EC2 thu thập memory metrics (% RAM).<br>- Cấu hình AWS Compute Optimizer phân tích tải hệ thống và trích xuất các đề xuất điều chỉnh kích thước máy chủ (Right-sizing) tối ưu. | 26/05/2026 | 26/05/2026 | <https://000032.awsstudygroup.com/> |
+| 4 | - Tạo Customer Managed Key (CMK) trong AWS KMS để mã hóa dữ liệu tĩnh trên S3.<br>- Kích hoạt AWS CloudTrail ghi nhận lịch sử thao tác API, cấu hình lưu trữ log vào S3 và sử dụng Amazon Athena chạy truy vấn SQL kiểm toán dữ liệu log. | 27/05/2026 | 27/05/2026 | <https://000033.awsstudygroup.com/> |
+| 5 | - Trực quan hóa chi phí theo AWS Well-Architected Framework bằng AWS Cost Explorer.<br>- Phân tích xu hướng chi phí theo Accounts/Services, đánh giá tỷ lệ sử dụng Savings Plans, Reserved Instances và phân tích chi phí truyền dữ liệu (Data Transfer). | 28/05/2026 | 28/05/2026 | <https://000034.awsstudygroup.com/> |
+| 6 | - Xây dựng giải pháp Data Lake trên AWS: S3, Kinesis Firehose, AWS Glue, Athena và QuickSight.<br>- Cấu hình Firehose thu thập dữ liệu stream lưu vào S3, chạy Glue Crawler tạo catalog, phân tích bằng Athena và trực quan bằng QuickSight. | 29/05/2026 | 29/05/2026 | <https://000035.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Quản trị hệ thống tập trung (SSM)**: Tự động hóa quét bản vá lỗi hệ điều hành trên máy chủ Windows qua Patch Manager, thực thi thành công lệnh shell từ xa qua Run Command.
+* **Tối ưu hóa máy chủ (Right-sizing)**: Giám sát thành công dung lượng RAM của EC2 qua CloudWatch Agent, phân tích hiệu suất bằng Compute Optimizer để đưa ra các khuyến nghị nâng cấp/hạ cấp size máy chủ hợp lý.
+* **Kiểm toán & Mã hóa dữ liệu**: Bảo mật dữ liệu S3 bằng mã hóa KMS CMK, ghi nhận toàn bộ hoạt động API thông qua CloudTrail và viết truy vấn SQL trên Athena để tìm kiếm dấu vết kiểm toán bảo mật nhanh chóng.
+* **Quản lý chi phí (Cost Explorer)**: Hiểu rõ nguồn phát sinh chi phí truyền dữ liệu chéo vùng và tối ưu hóa kế hoạch mua Savings Plans hoặc Reserved Instances dựa trên báo cáo chi phí.
+* **Hệ thống dữ liệu lớn (Data Lake)**: Xây dựng hoàn chỉnh luồng thu thập dữ liệu streaming thời gian thực (Kinesis), chuẩn hóa cấu hình bảng dữ liệu (Glue Crawler), truy vấn trực tiếp (Athena) và thiết kế bảng biểu phân tích bằng QuickSight.

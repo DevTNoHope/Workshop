@@ -1,57 +1,31 @@
 ---
 title: "Week 3 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Study virtualization technology and practice virtual machine migration (VM Import/Export).
+* Understand container technologies (Docker/Docker Compose) and container orchestration on Amazon ECS.
+* Build automated CI/CD pipelines for containers and manage security compliance with AWS Security Hub.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Mon | - Research VM Import/Export: export Ubuntu VM from VMware Workstation to S3.<br>- Configure IAM Roles and import S3 VM files to Custom AMIs.<br>- Launch EC2 instances from custom AMIs and verify connection. | 05/04/2026 | 05/04/2026 | <https://000014.awsstudygroup.com/> |
+| Tue | - Learn Docker basics: Dockerfile, Images, Containers, and basic commands.<br>- Set up EC2 instances running Docker and manage multi-container apps with Docker Compose.<br>- Create Amazon ECR repositories, configure IAM permissions, and push Docker images. | 05/05/2026 | 05/05/2026 | <https://000015.awsstudygroup.com/> |
+| Wed | - Study Amazon ECS architecture: Clusters, Task Definitions, and Services.<br>- Create an ECS Cluster (EC2 launch type) with Application Load Balancer and AWS Cloud Map integration.<br>- Practice ECS rolling updates and Blue/Green deployment strategies. | 05/06/2026 | 05/06/2026 | <https://000016.awsstudygroup.com/> |
+| Thu | - Design container CI/CD pipeline on Amazon ECS.<br>- Configure GitLab code repository, write `.gitlab-ci.yml`, and integrate with AWS CodeBuild.<br>- Automate build, push image to ECR, and deploy update to ECS. | 05/07/2026 | 05/07/2026 | <https://000017.awsstudygroup.com/> |
+| Fri | - Learn AWS Security Hub and cloud compliance standards (CIS AWS Foundations, PCI DSS).<br>- Enable Security Hub in the AWS account, analyze security findings, and configure AWS Config remediation. | 05/08/2026 | 05/08/2026 | <https://000018.awsstudygroup.com/> |
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **VM Migration (VM Import/Export)**: Successfully migrated on-premises virtual machines to AWS Custom AMIs and exported cloud resources back to local virtualization formats.
+* **Containerization (Docker & ECR)**: Mastered writing optimized Dockerfiles, managing multi-container deployments using Docker Compose, and securely pushing images to ECR.
+* **Orchestration (Amazon ECS)**: Deployed containerized workloads on ECS, configured container network settings, integrated ALB routing, and performed automated Blue/Green deployments.
+* **CI/CD Automation**: Created an end-to-end deployment pipeline from GitLab CI to AWS ECR/ECS, ensuring code updates are automatically published to production.
+* **Security Auditing (Security Hub)**: Setup centralized security score tracking, resolved misconfigured cloud resources, and analyzed automated remediation workflows.

@@ -1,57 +1,30 @@
 ---
-title: "Week 12 Worklog"
+title: "Week 12 Work Log"
 date: 2024-01-01
-weight: 2
+weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Bundle and deploy Frontend client code onto cloud CDN distribution networks (S3 & CloudFront).
+* Manage domain routing configurations and HTTPS certificates using Amazon Route 53.
+* Setup automated system health monitoring alerts (CloudWatch & SNS) and compile final internship reports.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Mon | - Compile ReactJS Client code into static assets folder using `npm run build`.<br>- Upload static bundles directly onto S3 bucket `itcoach-static-assets` and configure delivery settings. | 07/06/2026 | 07/06/2026 | ITCoach Manual |
+| Tue | - Establish Amazon CloudFront CDN Distribution (`itcoach-distribution`) linking it to S3 static assets.<br>- Set default root object to `index.html`, add custom 403/404 error page responses rewriting to HTTP 200 `/index.html` for React Router routing, and execute cache invalidations. | 07/07/2026 | 07/07/2026 | ITCoach Manual |
+| Wed | - Set up Amazon Route 53 domain hosting and custom domain DNS records.<br>- Create A-type Alias records directing primary domain to CloudFront CDN and API subdomains to AWS API Gateway endpoints. | 07/08/2026 | 07/08/2026 | ITCoach Manual |
+| Thu | - Configure AWS system alerts: create Amazon SNS Topic (`itcoach-alerts`) and subscribe operator email accounts.<br>- Configure 3 CloudWatch alarms: Lambda execution failures (`itcoach-ai-errors`), API Gateway 5xx rates, and SQS visible messages backlog thresholds. | 07/09/2026 | 07/09/2026 | ITCoach Manual |
+| Fri | - Run end-to-end black-box verification testing on the production-grade ITCoach application.<br>- Clean up staging cloud resources, optimize Serverless costs, write project documentation, and summarize internship results. | 07/10/2026 | 07/10/2026 | Internal Documents |
 
 ### Week 12 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **CDN Frontend Hosting**: Successfully bundled client codebase, deploying static bundles onto CloudFront CDN with responsive loading and full single-page routing support.
+* **DNS Custom Routing**: Completed Route 53 configurations routing custom domain requests securely over HTTPS to CloudFront and API Gateway backends.
+* **Proactive Monitoring**: Activated CloudWatch alert notifications to SNS topics, broadcasting email alerts when execution limits or queue visibility thresholds are exceeded.
+* **Final Evaluation**: Successfully verified the serverless ITCoach system in production, concluding the internship program at FCAJ.
