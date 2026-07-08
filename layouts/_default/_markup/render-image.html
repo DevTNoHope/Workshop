@@ -1,1 +1,14 @@
-<img src="{{ trim .Destination "/" | relURL }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }} />
+{{- $url := urls.Parse .Destination -}}
+{{- $styles := slice -}}
+{{- if $url.Query -}}
+  {{- with $url.Query.Get "width" -}}
+    {{- $styles = $styles | append (printf "width: %s" .) -}}
+  {{- end -}}
+  {{- with $url.Query.Get "height" -}}
+    {{- $styles = $styles | append (printf "height: %s" .) -}}
+  {{- end -}}
+{{- end -}}
+<img src="{{ $url.Path | relURL }}" 
+     alt="{{ .Text }}" 
+     {{ with .Title }}title="{{ . }}"{{ end }} 
+     {{ if $styles }}style="{{ delimit $styles "; " }};"{{ end }} />
