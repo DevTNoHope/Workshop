@@ -1,4 +1,5 @@
 {{- $url := urls.Parse .Destination -}}
+{{- $path := strings.TrimPrefix "/" $url.Path -}}
 {{- $styles := slice -}}
 {{- if $url.Query -}}
   {{- with $url.Query.Get "width" -}}
@@ -8,7 +9,7 @@
     {{- $styles = $styles | append (printf "height: %s" .) -}}
   {{- end -}}
 {{- end -}}
-<img src="{{ $url.Path | relURL }}" 
+<img src="{{ $path | relURL }}" 
      alt="{{ .Text }}" 
      {{ with .Title }}title="{{ . }}"{{ end }} 
      {{ if $styles }}style="{{ delimit $styles "; " }};"{{ end }} />
