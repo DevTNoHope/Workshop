@@ -27,3 +27,15 @@ Trong suốt quá trình thực tập tại đơn vị, em đã tích cực tham
 &emsp;**Địa điểm:** Tầng 36, Bitexco Financial Tower, Quận 1, TP. Hồ Chí Minh  
 
 &emsp;**Vai trò:** Người tham dự học tập  
+
+---
+
+### [Event 3 - FCAJ Community Day (11/07/2026)](4.3-Event3/)
+&emsp;**Tên sự kiện:** FCAJ Community Day (AWS First Cloud AI Journey)  
+
+&emsp;**Thời gian:** Thứ Bảy, ngày 11 tháng 7 năm 2026 (09:00 sáng – 12:00 trưa)  
+
+&emsp;**Địa điểm:** Tầng 26, Bitexco Financial Tower, Quận 1, TP. Hồ Chí Minh  
+
+&emsp;**Vai trò:** Người tham dự học tập
+

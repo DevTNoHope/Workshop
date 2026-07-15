@@ -8,7 +8,7 @@ pre: " <b> 6. </b> "
 
 Trong suốt thời gian thực tập tại cộng đồng học tập công nghệ **First Cloud AI Journey (FCAJ)** từ **20/04/2026** đến **10/07/2026**, em đã có cơ hội học hỏi chuyên sâu về điện toán đám mây AWS và phát triển dự án thực tế **ITCoach** (nền tảng luyện phỏng vấn tích hợp AI). 
 
-Đặc thù của kỳ thực tập này là làm việc theo mô hình Hybrid (kết hợp từ xa và trực tiếp). Do số lượng sinh viên tham gia cộng đồng rất đông, ban quản trị áp dụng chính sách xét duyệt đăng ký trước khi lên văn phòng (yêu cầu tối thiểu 1 lần/tuần nhưng tùy thuộc vào giới hạn chỗ ngồi mà có tuần được duyệt, có tuần không). Tính đến thời điểm hiện tại, em đã tham gia làm việc trực tiếp tại văn phòng 3 buổi và tham dự 2 buổi sự kiện công nghệ trực tiếp tại văn phòng AWS (tầng 26 Bitexco Financial Tower). Thời gian còn lại em chủ động nghiên cứu và tự học từ xa.
+Đặc thù của kỳ thực tập này là làm việc theo mô hình Hybrid (kết hợp từ xa và trực tiếp). Do số lượng sinh viên tham gia cộng đồng rất đông, ban quản trị áp dụng chính sách xét duyệt đăng ký trước khi lên văn phòng (yêu cầu tối thiểu 1 lần/tuần nhưng tùy thuộc vào giới hạn chỗ ngồi mà có tuần được duyệt, có tuần không). Tính đến thời điểm hiện tại, em đã tham gia làm việc trực tiếp tại văn phòng 3 buổi và tham dự 3 buổi sự kiện công nghệ trực tiếp tại văn phòng AWS (tầng 26 Bitexco Financial Tower). Thời gian còn lại em chủ động nghiên cứu và tự học từ xa.
 
 Dưới đây là bảng tự đánh giá cá nhân của em sau kỳ thực tập:
 

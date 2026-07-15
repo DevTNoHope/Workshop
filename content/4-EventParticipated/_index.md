@@ -27,3 +27,15 @@ During my internship, I actively participated in community events to stay update
 &emsp;**Location:** 36th Floor, Bitexco Financial Tower, District 1, Ho Chi Minh City  
 
 &emsp;**Role:** Participant  
+
+---
+
+### [Event 3 - FCAJ Community Day (07/11/2026)](4.3-Event3/)
+&emsp;**Event Name:** FCAJ Community Day (AWS First Cloud AI Journey)  
+
+&emsp;**Date & Time:** Saturday, July 11, 2026 (09:00 AM – 12:00 PM)  
+
+&emsp;**Location:** 26th Floor, Bitexco Financial Tower, District 1, Ho Chi Minh City  
+
+&emsp;**Role:** Participant
+

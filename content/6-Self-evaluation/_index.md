@@ -8,7 +8,7 @@ pre: " <b> 6. </b> "
 
 During my internship at the technology learning community **First Cloud AI Journey (FCAJ)** from **April 20, 2026** to **July 10, 2026**, I had the opportunity to study AWS Cloud Services in depth and develop my graduation project, **ITCoach** (an AI-powered mock interview simulator). 
 
-The unique aspect of this internship was its hybrid model. Due to a very high volume of students in the community, the management team set up an approval system for booking office desks. Although we were requested to come to the office at least once a week, desk approvals were on-and-off depending on capacity. Up to the current moment, I have been approved to work at the office for 3 sessions, along with participating in 2 technology community events at the AWS Office (26th floor of Bitexco Financial Tower). The remaining time was spent on proactive remote research and self-study.
+The unique aspect of this internship was its hybrid model. Due to a very high volume of students in the community, the management team set up an approval system for booking office desks. Although we were requested to come to the office at least once a week, desk approvals were on-and-off depending on capacity. Up to the current moment, I have been approved to work at the office for 3 sessions, along with participating in 3 technology community events at the AWS Office (26th floor of Bitexco Financial Tower). The remaining time was spent on proactive remote research and self-study.
 
 Below is my self-evaluation sheet for the internship period:
 
